@@ -1,0 +1,382 @@
+﻿<html>
+<head>
+    <title>wasem.htnl</title>
+    <meta charset="utf-8" />
+    <meta lang="ar" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+
+    <!--/*.col-md-3 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    }
+
+    .container {
+    width: 150px;
+    }
+
+    body {
+    }*/-->
+
+    <script src="http://localhost:1152/project.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="containt">
+            <h1 class="sub">المعهد التقاني للحاسوب</h1>
+            <h2 class="delet">حذف حساب</h2>
+            <div class="border">
+                <p class="login">LOGIN</p>
+                <label class="name count">اسم الحساب</label><br /><br />
+                <input type="text" id="Ntxt" class="formControl" runat="server" onclick="txt()" />
+                <br /><br />
+
+                <label class="name count">اسم الطالب</label><br /><br />
+                <input type="text" id="Stxt" class="formControl" runat="server" onclick="txt()" />
+                <br /><br />
+
+
+                <input type="button" class="Delet" id="Button1" onclick="bttn()" value="حذف" />
+                <br />
+                <br />
+            </div>
+        </div>
+    </form>
+    <!--<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li id="signin"><a href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i>  تسجيل الدخول</a></li>
+            <li id="signin" class="active"><a href="#TCC"><i class="glyphicon glyphicon-home"></i> الصفحة الرئيسية</a></li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li><a href="#program">البرمجيات</a></li>
+            <li><a href="#network">الشبكات</a></li>
+            <li><a href="#computer">الحواسيب</a></li>
+        </ul>
+    </div>    <i class="glyphicon glyphicon-user"></i>-->
+    <!--<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav><br />
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Page 1
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav><br />
+    <form action="/action_page.php">
+
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+
+
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+
+
+        <label><input type="checkbox"> Remember me</label><br />
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form><br />
+    <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form><br />
+    <button class="btn" data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+    <div id="demo">
+        Some text..
+    </div><br />
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Panel Body</div>
+                <div class="panel-footer">Panel Footer</div>
+            </div>
+        </div>
+    </div><br />
+    <p class="lead">
+        <a class="item" data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+    </p><br />
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <ul class="list-group">
+                    <li class="list-group-item">One</li>
+                    <li class="list-group-item">Two</li>
+                    <li class="list-group-item">Three</li>
+                </ul>
+                <div class="panel-footer">Footer</div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        Collapsible Group 1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        Collapsible Group 2
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        Collapsible Group 3
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div><br />
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button><br />
+    <a href="#" class="btn btn-info" role="button">Link Button</a>
+    <button type="button" class="btn btn-info">Button</button>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">-->
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+    <!--<ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"> tarek</li>
+        <li data-target="#myCarousel" data-slide-to="1">wasem</li>
+        <li data-target="#myCarousel" data-slide-to="2">mona</li>
+    </ol>-->
+    <!-- Wrapper for slides -->
+    <!--<div class="carousel-inner">
+        <div class="item active">
+            <img src="la.jpg" alt="Los Angeles">
+        </div>
+
+        <div class="item">
+            <img src="IMG-20201129-WA0024.jpg" alt="Chicago">
+        </div>
+
+        <div class="item">
+            <img src="IMG-20201129-WA0024.jpg" alt="New York">
+        </div>
+    </div>-->
+    <!-- Left and right controls -->
+    <!---- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>-->
+    <!--<img src="IMG-20201129-WA0024.jpg" alt="Chania" class="img-rounded">-->
+    <!--<div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="/w3images/lights.jpg">
+                    <img src="IMG-20201129-WA0024.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="/w3images/nature.jpg">
+                    <img src="IMG-20201129-WA0024.jpg" alt="Nature" style="width:100%">
+                    <div class="caption">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="/w3images/fjords.jpg">
+                    <img src="IMG-20201129-WA0024.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+    <div class="col-lg-3">
+        <div class="row">
+            <img src="IMG-20201129-WA0024.jpg" class="img-responsive" alt="Cinque Terre">
+        </div>
+    </div>-->
+    <!--<div class="container">
+            <div class="row">
+
+                <div class="row">
+                    <div class="col-lg-3 ">
+                        <img class="img-responsive" src="IMG-20201129-WA0024.jpg" />
+                    </div>
+
+                    <div class="col-lg-6  col-lg-push-2">
+                        <p class="lead">hjf,esvgfsgf sdhgfuisgfsuietfiwe LODowertyowiwegfupwe <br />jhdsgfuysgfefuwgv fdyuewfiydweayidfwliywdwylfdiwlowuegf<br />huiegfuiwetf8wegfwegfyuewgi</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="table">
+
+            <div class="table th">
+                <p class="table td">tarek</p>
+                <p class="table td">wasem</p>
+            </div>
+            <div class="table th">
+                <p class="table td">tarek</p>
+                <p class="table td">wasem</p>
+            </div>
+
+        </div>
+        <div class="container">
+            <input class="form-control" type="text" name="name" value="" />
+            <input class="form-control" type="text" name="name1" value="" />
+            <input class="form-control" type="text" name="name3" value="" />
+            <input class="form-control" type="text" name="name5" value="" />
+        </div><pre>
+
+
+    </pre>
+        <i class="bi bi-chevron-right"></i>-->
+
+
+</body>
+</html>
